@@ -1,0 +1,9 @@
+[Unit]
+Description=Run foo every 2 minutes and on boot
+
+[Timer]
+OnUnitInactiveSec=3m
+
+[Install]
+WantedBy=timers.target
+

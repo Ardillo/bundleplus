@@ -1,0 +1,9 @@
+[Unit]
+Description=plus the bundle when it runs out
+After=network.target
+
+[Service]
+ExecStart=/usr/local/etc/bundleplus/venv/bin/python3 /usr/local/etc/bundleplus/run.py
+
+[Install]
+WantedBy=default.target
